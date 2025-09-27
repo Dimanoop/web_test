@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class HomePage {
-
+language:string[] = ["Русский", "English"]
   constructor() {}
 
 }
