@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      {{Myname}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,9 +14,19 @@
   </ion-header>
 
   <div id="container">
-    <ion-item *ngFor="let language of my_language"
-      <ion-lang {{lang.name}} </ion-col>
+    <ion-list>
+      <ion-item *ngFor="let language of languages">
+        {{language}}
+      </ion-item>
+    </ion-list>
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
+
+
+  <ion-button shape="round" (click)="btn_click()">
+    кнопка
+  </ion-button>
+
 </ion-content>
+

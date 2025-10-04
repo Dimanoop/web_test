@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class HomePage {
-language:string[] = ["Русский", "English"]
+  languages:string[] = ["Русский", "English"]
   constructor() {}
 
+  Myname: string = "Dima"
+  btn_click(){
+    this.Myname = this.Myname + "1"
+  }
 }
